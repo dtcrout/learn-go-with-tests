@@ -26,7 +26,7 @@ func TestHello(t *testing.T) {
 
 	// Subtest for argument in Hello()
 	t.Run("saying hello to people", func(t *testing.T) {
-		got := Hello("Darshan")
+		got := Hello("Darshan", "")
 		want := "Hello, Darshan"
 
 		assertCorrectMessage(t, got, want)
@@ -34,8 +34,24 @@ func TestHello(t *testing.T) {
 
 	// Subtest for empty argument in Hello()
 	t.Run("say 'Hello, World' when an empty string is supplied", func(t *testing.T) {
-		got := Hello("")
+		got := Hello("", "")
 		want := "Hello, World"
+
+		assertCorrectMessage(t, got, want)
+	})
+
+	// Subtest for Spanish
+	t.Run("in Spanish", func(t *testing.T) {
+		got := Hello("Elodie", "Spanish")
+		want := "Hola, Elodie"
+
+		assertCorrectMessage(t, got, want)
+	})
+
+	// Subtest for French
+	t.Run("in French", func(t *testing.T) {
+		got := Hello("Guy", "Spanish")
+		want := "Hola, Guy"
 
 		assertCorrectMessage(t, got, want)
 	})
