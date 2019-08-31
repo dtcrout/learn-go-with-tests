@@ -4,4 +4,4 @@ This is my own personal repository for the [Learn Go with Tests](https://quii.gi
 
 ## Notes
 
-* Golang docs are available locally and can be launched via `$ godoc -http :8000``
+* Golang docs are available locally and can be launched via `$ godoc -http :8000`
