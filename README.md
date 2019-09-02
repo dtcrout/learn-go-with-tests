@@ -9,7 +9,7 @@ This is my own personal repository for the [Learn Go with Tests](https://quii.gi
 * Hello, World ✅
 * Integers ✅
 * Iteration ✅
-* Arrays and slices
+* Arrays and slices ✅
 * Structs, methods & interfaces
 * Pointers & errors
 * Maps
